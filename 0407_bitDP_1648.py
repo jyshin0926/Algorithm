@@ -5,15 +5,14 @@
 # 이진수 두개 중 하나만 이용
 # 이렇게 하려면 아무 인덱스에서 저장하면 안 되고 맨 위 칸에 방문했을 때 메모이제이션 이용해주면 됨
 
-# 도미노 1x2 또는 2x1
-def dp(answer, n, m, i, j, now_state, next_state):  # 진행우선방향: 아래 -> 오른쪽
-    tmp1, tmp2 = 0,0
-    if j == m: # 맨 오른쪽 넘었을 때
+def dp(answer, n, m, i, j, now_state, next_state):  # 아래 -> 오른쪽 우선 순으로 진행
+    tmp1, tmp2 = 0,0     # 도미노 1x2 또는 2x1
+    if j == m:
         if now_state == 1 << n:     # 열의 개수에 해당하는 n 사이즈의 2진수 이용
-            return 1    # 마지막 줄 빈칸없이 다 채웠을 때
+            return 1
         else:
-            return 0    # 마지막 줄에 빈칸있을 때
-    if i == n: # 맨 아래쪽 넘었을 때
+            return 0
+    if i == n:
         now_state = next_state
         next_state = 1 << n     # n번째 비트 켜기
         return dp(answer, n, m, 0, j+1, now_state, next_state)  # 다음 줄로 이동
@@ -23,9 +22,9 @@ def dp(answer, n, m, i, j, now_state, next_state):  # 진행우선방향: 아래
         if now_state & 1 << i: # 현재 칸이 채워져있다면 다음 칸으로 전진
             tmp1 = dp(answer, n, m, i+1, j, now_state, next_state)
         else:
-            tmp1 = dp(answer, n, m, i+1, j, now_state, next_state+(1 << i))  # 옆으로 채우기   # 1
+            tmp1 = dp(answer, n, m, i+1, j, now_state, next_state+(1 << i))  # 1x2 도미노
             if not(now_state & 1 << (i+1)):
-                tmp2 = dp(answer, n, m, i+2, j, now_state, next_state)  # 아래로 채우기 # 2x1 도미노
+                tmp2 = dp(answer, n, m, i+2, j, now_state, next_state)  # 2x1 도미노
     total = (tmp1 + tmp2) % 9901
     if next_state == (1 << n):
         answer[i][j][now_state] = total
