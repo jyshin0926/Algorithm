@@ -1,4 +1,4 @@
-# https://wayhome25.github.io/cs/2017/04/15/cs-16/  # binary search 참고
+# https://wayhome25.github.io/cs/2017/04/15/cs-16/  # binary search
 
 def solution(n,times):
     start,end = 1, min(times)*n
