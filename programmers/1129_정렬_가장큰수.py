@@ -16,6 +16,13 @@ def solution(numbers):
     num.sort(key=lambda x: x*3, reverse=True)  # 원소들이 1000 이하이므로 최소 3자리까지 비교 가능하도록 하기
     return str(int(''.join(num)))  # '000' 처리
 
+# 테스트 1 〉	통과 (794.34ms, 23.3MB)
+# 테스트 2 〉	통과 (247.49ms, 17.2MB)
+# 테스트 3 〉	통과 (1349.96ms, 27.4MB)
+# 테스트 4 〉	통과 (2.21ms, 10.5MB)
+# 테스트 5 〉	통과 (592.58ms, 21.8MB)
+# 테스트 6 〉	통과 (482.59ms, 20.3MB)
+# 테스트 7 〉	통과 (0.03ms, 10.3MB)
 
 print(solution([6, 10, 2]))
 print(solution([3, 30, 34, 5, 9]))
