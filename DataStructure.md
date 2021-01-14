@@ -1,4 +1,6 @@
-# **Array**
+# DataStructure
+
+## **Array**
 ### Array란?
 * 데이터를 나열하고, 각 데이터를 인덱스에 대응하도록 구성한 데이터 구조
 * *Python에서는 List 타입이 Array 기능을 제공*
@@ -19,7 +21,7 @@ arr1 = [1,2,3,4,5]
 arr2 = [[1,2,3],[4,5,6],[7,8,9]]
 ```
 
-# **Linked List**
+## **Linked List**
 ### Linked List란?
 * 연결 리스트라고도 하며, Array의 삽입/삭제 연산에 대한 비효율성을 극복하고자 등장
 * Array와의 차이점 : Array는 논리적, 물리적 저장이 순서대로 되어있는 반면, LinkedList는 각 원소가 다음 index 위치에 해당하는 물리적 주소를 갖고 있다.<br>
@@ -62,7 +64,7 @@ while node.next:
 print (node.data)  # 1 ~ 9 차례대로 출력됨
 ```
 --------------------------------------------------
-# **Queue**
+## **Queue**
 ### Queue란?
 * Queue는 선형 자료구조이며, FIFO(First In, First Out)구조이다. 
 * 멀티 태스킹을 위한 프로세스 스케쥴링 방식을 구현하기 위해 많이 사용되며, 작업 우선순위, Heap 구현 등에 사용된다.
@@ -123,7 +125,7 @@ print(dequeue())         # 0
 ```
 
 
-# **Stack**
+## **Stack**
 ### Stack이란?
 * Stack은 선형 자료구조로, 데이터를 한쪽 끝에서만 제한적으로 접근 가능한 구조이다.
 * LIFO(Last In, First Out)구조이며, 미로찾기, 괄호 유효성 체크 등에 활용된다.
@@ -149,7 +151,7 @@ print(a)       # 2
 
 --------------------------------------------------
 
-# **Hash Table**
+## **Hash Table**
 ### HashTable이란?
 * key에 데이터(value)를 저장하는 구조
 * key를 통해 바로 데이터를 받아올 수 있으므로, 속도가 획기적으로 빨라짐
@@ -224,7 +226,7 @@ print(h_table.hash_table)   # [0, '1111', '2222', '3333', 0, 0, 0, 0]
 ```
 --------------------------------------------------------------------
 
-# **Tree**
+## **Tree**
 ### Tree란?
 * 비선형 자료구조로, Node와 Branch를 이용해서, 사이클을 이루지 않도록 구성한 계층적 데이터 구조
 * 이진 트리(Binary Tree) 형태의 구조로, 탐색 알고리즘 구현을 위해 많이 사용됨
@@ -259,7 +261,7 @@ print(h_table.hash_table)   # [0, '1111', '2222', '3333', 0, 0, 0, 0]
 <img src="https://www.mathwarehouse.com/programming/images/binary-search-tree/binary-search-tree-sorted-array-animation.gif" />
 (출처: https://www.mathwarehouse.com/programming/gifs/binary-search-tree.php#binary-search-tree-insertion-node)
 
-# **Heap**
+## **Heap**
 ### Heap이란?
 * 데이터에서 최대값과 최소값을 빠르게 찾기 위해 고안된 **완전 이진 트리(Complete Binary Tree)**
 * 힙을 사용하는 이유
@@ -324,6 +326,3 @@ max_item = heapq.heappop(max_heap)[1]
 print(max_item) # 9
 
 ```
-
-
-
