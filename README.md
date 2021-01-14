@@ -288,7 +288,7 @@ print(h_table.hash_table)   # [0, '1111', '2222', '3333', 0, 0, 0, 0]
 * heapq.heappush(heap, item) : item을 heap에 추가
 * heapq.heappop(heap) : heap에서 가장 작은 원소를 pop & 리턴. 비어 있는 경우 IndexError가 호출됨. 
 * heapq.heapify(x) : 리스트 x를 즉각적으로 heap으로 변환함 (in linear time, O(N))
-* 파이썬 ```heapq``모듈은 MinHeap으로 구현되어있으므로 MaxHeap구현을 위해서는 y=-x 변환을 하여 최솟값 정렬이 최댓값 정렬로 바뀌게 하는 아이디어가 필요하다.
+* 파이썬 ```heapq```모듈은 MinHeap으로 구현되어있으므로 MaxHeap구현을 위해서는 y=-x 변환을 하여 최솟값 정렬이 최댓값 정렬로 바뀌게 하는 아이디어가 필요하다.
 ```python
 import heapq
 
