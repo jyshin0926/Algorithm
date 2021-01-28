@@ -8,7 +8,7 @@ def dfs(x,y):
     directions = [(-1,0),(1,0),(0,-1),(0,1)]    # 상하좌우 이동
     for dx, dy in directions:
         nx, ny = x + dx, y + dy     # next_x, next_y
-        if nx < 0 or nx >= n or ny < 0 or ny >= m:  # nx, ny가 2차원 배열에 포함되어 있으면
+        if nx < 0 or nx >= n or ny < 0 or ny >= m:  # nx, ny가 2차원 배열에 포함되어 있지 않으면
             continue
         if array[nx][ny] and not visited[nx][ny]:   # 해당 원소를 방문하지 않은 경우 방문하도록 처리
             # 배추가 심어져있는 곳(값이 1인 곳)만 방문
