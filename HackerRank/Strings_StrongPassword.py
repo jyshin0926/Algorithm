@@ -1,8 +1,8 @@
 def minimumNumber(n, password):
-    numbers = [x for x in "0123456789"]
-    lower_case = [x for x in "abcdefghijklmnopqrstuvwxyz"]
-    upper_case = [x for x in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
-    special_characters = [x for x in "!@#$%^&*()-+"]
+    numbers = "0123456789"
+    lower_case = "abcdefghijklmnopqrstuvwxyz"
+    upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    special_characters = "!@#$%^&*()-+"
     ans = 0
     tmp = [0,0,0,0]
     for x in password:
