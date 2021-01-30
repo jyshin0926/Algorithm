@@ -15,7 +15,7 @@ def solution(begin, target, words):
         for i in range(len(words)):
             cnt = 0
             for j in range(len(words[i])):
-                if words[i][j] != stack[j]:
+                if words[i][j] != stack[j]:  # 모든 단어 길이 같으므로 이렇게 체크
                     cnt += 1
             if cnt == 1:        # words[i] 체크해서 스펠링 하나만 다를 경우 체크
                 if visited[i] == 1:  # 방문한 경우
