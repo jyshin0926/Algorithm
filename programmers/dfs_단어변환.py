@@ -21,7 +21,7 @@ def solution(begin, target, words):
                 if visited[i] == 1:  # 방문한 경우
                     continue
                 else:
-                    visited[i] = 1   # 방문 안 한 경
+                    visited[i] = 1   # 방문 안 한 경우
                 tmp.append(words[i])
         ans += 1
     return ans
