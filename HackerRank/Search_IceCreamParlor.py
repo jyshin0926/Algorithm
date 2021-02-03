@@ -9,6 +9,6 @@ print(icecreamParlor(4,[2,2,4,3]))
 
 # t: ice cream parlor에 가는 횟수
 # m: 쓸 비용
-# cost : 각 맛 아이스크림의 n만큼의 array인데 i=1 ~ n까지이고 각 i번째 flavor의 cost
+# cost : 각 i번째 flavor의 cost
 # n : 한 번에 제공되는 맛
 # 맞는 cost에 해당되는 flavor의 Index+1 리턴(오름순으로 차례대로)
