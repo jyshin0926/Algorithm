@@ -17,4 +17,6 @@ def bfs(visited, n, k):
 
 n, k = map(int, input().split())
 visited = [0] * (10**6)
-print(bfs(visited, n, k))
+
+if __name__ == '__main__':
+    assert bfs(visited, n, k) == 4
