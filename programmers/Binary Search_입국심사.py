@@ -9,7 +9,6 @@ def solution(n,times):
             if tmp <= 0:
                 ans = mid
                 right = mid - 1
-                break
         if tmp > 0:
             left = mid+1
     return ans
