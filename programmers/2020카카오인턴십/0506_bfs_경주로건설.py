@@ -14,7 +14,6 @@ def solution(board):
             ny = y + directions[d][1]
             if 0 <= nx < length and 0 <= ny < length and board[nx][ny] == 0:
                 new_cost = cost
-               # print('new_cost:',new_cost)
 
                 # 가장 처음에는 방향없으므로(-1) 비용에 100 추가
                 if way == -1:
