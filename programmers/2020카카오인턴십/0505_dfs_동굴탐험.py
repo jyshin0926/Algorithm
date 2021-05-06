@@ -1,3 +1,5 @@
+# https://taehee-kim-dev.tistory.com/116 참고
+
 import sys
 sys.setrecursionlimit(10**6)
 from collections import defaultdict
