@@ -50,18 +50,3 @@ for walls in candidate_walls:
 
     res = max(res, cnt)
 print(res)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#
