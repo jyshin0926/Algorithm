@@ -4,7 +4,6 @@ import copy
 
 n,m = map(int, input().split())
 lab = [list(map(int, input().split())) for i in range(n)]
-
 room = []; virus = []
 
 for i in range(n):
@@ -21,7 +20,7 @@ res = 0
 def bfs(r,c):
     queue = deque()
     queue.append([r,c])
-    visited[r][c]=1
+    visited[r][c] = 1
     while queue:
         x,y = queue.popleft()
         for i in range(4):
@@ -44,8 +43,7 @@ for walls in candidate_walls:
     new_lab[w3[0]][w3[1]]=1
 
     for j in virus:
-        j1, j2 = j
-        bfs(j1, j2)
+        bfs(j[0], j[1])
 
     for k in new_lab:
         cnt += k.count(0)
