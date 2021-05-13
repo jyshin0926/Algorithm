@@ -32,7 +32,6 @@ class Solution:
                 max_len += 1  # 이게 팰린드롬인지 체크
         return s[start:start + max_len]
 
-
 if __name__ == '__main__':
     for x in ['babad','cbbd','a','ac']:
         print(Solution().longestPalindrome(x))
