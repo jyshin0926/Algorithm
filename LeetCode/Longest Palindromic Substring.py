@@ -14,7 +14,8 @@ class Solution:
                 start,length = i-length-1, length+2
         return s[start:start+length]
 
-        # 귀류법(모순 증명법) https://leetcode.com/problems/longest-palindromic-substring/discuss/2925/Python-O(n2)-method-with-some-optimization-88ms.
+        # 귀류법(모순 증명법)
+        # https://leetcode.com/problems/longest-palindromic-substring/discuss/2925/Python-O(n2)-method-with-some-optimization-88ms.
         # Runtime: 96 ms, faster than 98.48% of Python3 online submissions for Longest Palindromic Substring.
         # Memory Usage: 14.4 MB, less than 37.56% of Python3 online submissions for Longest Palindromic Substring.
     def longestPalindrome(self, s: str) -> str:
