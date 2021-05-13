@@ -20,7 +20,7 @@ class Solution:
                         dp[i][j] = dp[i-1][j] + dp[i][j-1]
 
                 else:
-                    if len(obstacleGrid) == 1: # 이 조건도
+                    if len(obstacleGrid) == 1: # 이 조건도 마찬가지로 런타임 때문에 써줌
                         return 0
                     if i==0 and j==0:
                         continue
