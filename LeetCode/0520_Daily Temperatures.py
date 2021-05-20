@@ -2,7 +2,6 @@ from typing import List
 
 # Runtime: 512 ms, faster than 59.07% of Python3 online submissions for Daily Temperatures.
 # Memory Usage: 18.5 MB, less than 80.75% of Python3 online submissions for Daily Temperatures.
-
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         ans = [0 for _ in range(len(temperatures))]; stack = []
