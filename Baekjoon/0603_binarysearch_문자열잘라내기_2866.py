@@ -22,7 +22,7 @@ while start <= end:
     else:
         start = mid + 1
     trace = check
-    tmp_dict = []
+    tmp_list = [] # 초기화 시켜줘야 더 빠르고, dictionary 써주면 조금 더 빨라짐
 if trace:
     print(mid-1)
 else:
