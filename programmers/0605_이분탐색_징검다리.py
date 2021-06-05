@@ -12,7 +12,6 @@ def solution(distance, rocks, n):
                 rm_cnt += 1     # mid보다 작으면 늘리기
             else:
                 st_rock = rock  # 아니라면, 해당 rock을 새로운 기준으로 세우기
-
         if rm_cnt > n:
             end = mid-1
         else:
