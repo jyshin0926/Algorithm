@@ -1,4 +1,6 @@
 # brute force
+# 현 시점 이후의 가격을 다 살펴봄
+# 시간복잡도 O(n^2)
 def solution(prices):
     ans = []
     for i in range(len(prices)):
@@ -19,6 +21,10 @@ def solution(prices):
 # 테스트 5 〉	통과 (73.85ms, 17.1MB)
 
 # stack  # LIFO
+# 이후의 모든 시간을 볼 필요 없이, 계속 값이 오를 때는 그 시점들(인덱스)을 다 스택에 넣다가
+# 값이 떨어지는 시점에서 떨어진 값보다 큰 애들을 빼주면서 시간을 기록
+# 이렇게 while문이 for문에 중첩되도록 구현하면 for문을 한번만 돌게 되고
+# for문의 시간 복잡도가 O(n)으로 감소
 def solution2(prices):
     ans = [0]*len(prices)
     stack = []
