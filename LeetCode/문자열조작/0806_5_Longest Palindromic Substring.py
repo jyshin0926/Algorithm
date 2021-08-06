@@ -10,7 +10,7 @@ class Solution:
             return s[left+1:right]
 
         # 해당 사항이 없을 때 빠르게 리턴
-        if len(s) < 2 or s == s[::-1]:
+        if len(s) == 1 or s == s[::-1]:
             return s
 
         result = ''
