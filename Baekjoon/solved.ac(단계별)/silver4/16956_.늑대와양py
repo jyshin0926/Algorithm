@@ -1,0 +1,26 @@
+R, C = map(int, input().split())
+pasture = [list(input()) for i in range(R)]
+dx, dy = [0,1,0,-1], [1,0,-1,0]
+
+ck = False
+
+for i in range(R):
+    for j in range(C):
+        if pasture[i][j] == 'W':
+            for w in range(4):   # 사방에 W 옆에 바로 S 있는지 방향벡터로 체크
+                ii, jj = i+dx[w], j+dy[w]
+                if ii < 0 or ii == R or jj < 0 or jj == C:  # 예외처리
+                    continue
+                if pasture[ii][jj] == 'S':
+                    ck = True
+
+if ck:
+    print(0)
+else:
+    print(1)
+    for i in range(R):
+        for j in range(C):
+            if pasture[i][j] not in 'SW':
+                pasture[i][j] = 'D'   # 그냥 그리디하게 안전하게 모든 칸을 D로 채워줌
+        print(''.join(pasture[i]))
+
