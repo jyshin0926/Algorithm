@@ -32,7 +32,7 @@ def findItinerary2(tickets):
     while stack:
         # 반복으로 스택을 구성하되 막히는 부분에서 풀어내는 처리
         while graph[stack[-1]]:
-            stack.append(graph[stack[-1]].pop())
+            stack.append(graph[stack[-1]].pop(0))
         result.append(stack.pop())
 
     # 다시 뒤집어서 어휘 순 결과로 출력
