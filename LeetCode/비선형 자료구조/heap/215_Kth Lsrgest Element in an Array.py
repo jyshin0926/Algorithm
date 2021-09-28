@@ -12,7 +12,7 @@ def solution3(nums,k):
 
 # heapq 모듈 이용
 # heapq 모듈은 min heap만 지원하므로 음수로 저장한 다음,
-# 가장 낮은 수부터 추출해서 부호를 변환하면 max heap처럼 동작하도록 구현 가능
+# 가장 낮은 수부터 추출해서 부호를 변환하면 max heap처럼 동작하도록 구현
 import heapq
 def findKthLargest2(nums,k):
     heap = []
