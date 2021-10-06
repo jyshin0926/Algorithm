@@ -1,3 +1,4 @@
+# 병합정렬 이용
 from typing import Optional
 
 class ListNode:
@@ -53,7 +54,7 @@ Sol = Solution()
 Sol.sortList(a)
 
 
-# 가장 작은 수를 head로 넣어서 출력해야 함
+# 원래 넣은 값 중 가장 작은 수를 갖는 값부터 출력해야 함
 while True:
     try:
         print(c.val)
